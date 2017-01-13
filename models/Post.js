@@ -4,10 +4,11 @@ var Comment = require('./Comment');
 var Schema = db.Schema;
 
 var postSchema = new Schema({
-  category: 'String',
-  author: 'String',
+  titre: 'String',
+  realisateur: 'String',
   picture: 'String',
-  title: 'String',
+  date_sortie: 'String',
+  synopsis: 'String',
   comments: [{type: Schema.Types.ObjectId, ref:'Comment'}]
 });
 

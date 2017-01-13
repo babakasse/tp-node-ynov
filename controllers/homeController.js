@@ -10,10 +10,10 @@ router.get(['/', '/index'], function(req, res) {
   });
 });
 
-router.get('/category/:name', function(req, res) {
+router.get('/synopsis/:name', function(req, res) {
   var name = req.params.name;
 
-  Post.find({category:name}).exec(function(err, posts) {
+  Post.find({synopsis:name}).exec(function(err, posts) {
     res.render('index.html', { posts : posts });
   });
 

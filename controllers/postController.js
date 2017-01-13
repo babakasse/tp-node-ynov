@@ -81,15 +81,18 @@ router.post('/', function(req, res) {
       return res.render('post.html', { error: err.message});
     }
 
-    var title = req.body.title;
-    var author = req.body.author;
-    var category = req.body.category;
+    var titre = req.body.titre;
+    var realisateur = req.body.realisateur;
+    var date_sortie =req.body.date_sortie;
+    var synopsis = req.body.synopsis;
+   
 
     var post = {
-      title: title,
-      author: author,
-      category: category,
-      picture: req.file.path
+      titre: titre,
+      realisateur: realisateur,
+      date_sortie :date_sortie,
+      picture: req.file.path,
+      synopsis: synopsis
     }
 
     var p = new Post(post);

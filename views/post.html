@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/public/css/main.css" />
-    <title>9Gag Like</title>
+    <title>ENICOLLA</title>
   </head>
   <body>
     <% include shared/menu.html %>
@@ -17,16 +17,21 @@
       <% } %>
       <form method="POST" class="form-horizontal" enctype="multipart/form-data">
         <div class="form-group">
-          <input type="text" class="form-control" name="title" placeholder="Titre">
+          <input type="text" class="form-control" name="titre" placeholder="Titre">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" name="author" placeholder="Auteur">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" name="category" placeholder="Categorie">
+          <input type="text" class="form-control" name="realisateur" placeholder="Auteur">
         </div>
         <div class="form-group">
           <input type="file" name="picture" class="form-control" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="date_sortie" class="form-control" placeholder="13/01/2017" />
+        </div>
+         <div class="form-group">
+          <textarea rows="4" cols="50" class="form-control" placeholder="Saisissez le synopsis ici" name="synopsis">
+              Entrez le synopsis du film ici
+          </textarea>
         </div>
         <button type="submit" class="btn btn-primary">Ajouter</button>
       </form>
