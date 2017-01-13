@@ -5,7 +5,7 @@ var Schema = db.Schema;
 
 var postSchema = new Schema({
   category: 'String',
-  author: 'String',
+  realisateur: 'String',
   picture: 'String',
   title: 'String',
   comments: [{type: Schema.Types.ObjectId, ref:'Comment'}]

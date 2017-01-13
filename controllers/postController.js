@@ -82,12 +82,12 @@ router.post('/', function(req, res) {
     }
 
     var title = req.body.title;
-    var author = req.body.author;
+    var realisateur = req.body.realisateur;
     var category = req.body.category;
 
     var post = {
       title: title,
-      author: author,
+      realisateur: realisateur,
       category: category,
       picture: req.file.path
     }
